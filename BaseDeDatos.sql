@@ -1,0 +1,24 @@
+create database cinepapu;
+use cinepapu;
+create table Usuarios(
+Nombre varchar (45) not null,
+Email varchar (45) not null primary key,
+Tipo enum('admin','user') not null,
+Contrasena varchar(45) not null
+);
+create table Peliculas(
+Nombre varchar (45) not null,
+Descripccion longtext not null,
+Autor varchar (45) not null,
+Ano varchar(4) not null,
+Genero enum('Ciencia ficcion','Terror',' Comedia',' Thriller',' Accion',' Aventura ','Animada',' Fantasia',' Drama',' Romanticas') not null,
+UrlVideo varchar(300) not null,
+UrlImagen varchar(300) not null,
+primary key(Nombre)
+);
+drop table peliculas;
+select * from usuarios;
+insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rok','Rika_js@outlook.com','admin','Rok');
+insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rika','icky_0307@hotmail.com','user','Rok');
+INSERT INTO Peliculas(Nombre, Descripccion, Autor, Ano, Genero, UrlVideo, UrlImagen) 
+VALUES ('Ready Player One','Buena peli','Steven Spielberg','2018',5,'https://www.youtube.com/watch?v=vDIg0N_pX94','img\ReadyPlayerOne.png');

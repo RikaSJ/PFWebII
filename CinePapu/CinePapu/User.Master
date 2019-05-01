@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="CinePapu.User" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+<title>Cine Papu</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma"/>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+        </head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Cerrar Menu</a>
+  <a href="#CienciaFiccion" onclick="w3_close()" class="w3-bar-item w3-button">Ciencia Ficcion</a>
+  <a href="#Terror" onclick="w3_close()" class="w3-bar-item w3-button">Terror</a>
+  <a href="#Comedia" onclick="w3_close()" class="w3-bar-item w3-button">Comedia</a>
+  <a href="#Thriller" onclick="w3_close()" class="w3-bar-item w3-button">Thriller</a>
+  <a href="#Accion" onclick="w3_close()" class="w3-bar-item w3-button">Accion</a>
+  <a href="#Aventura" onclick="w3_close()" class="w3-bar-item w3-button">Aventura</a>
+  <a href="#Animada" onclick="w3_close()" class="w3-bar-item w3-button">Animada</a>
+  <a href="#Fantasia" onclick="w3_close()" class="w3-bar-item w3-button">Fantasia</a>
+  <a href="#Drama" onclick="w3_close()" class="w3-bar-item w3-button">Drama</a>
+  <a href="#Romanticas" onclick="w3_close()" class="w3-bar-item w3-button">Romanticas</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href="Index.aspx">Salir</a></div>
+    <div class="w3-center w3-padding-16">CinePapu</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+
+  
+  
+    <asp:ContentPlaceHolder ID="ListaPelis" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+
+
+  <!-- Pagination 
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>-->
+  
+  <hr id="about"/>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>CinePapu</h3><br>
+    <img src="img/LogoCP.png" alt="Me" class="w3-image" style="display:block;margin:auto" />
+    <div class="w3-padding-32">
+      <h4><b>Acerca de su servicio</b></h4>
+      <h6><i>Para los que quieren una desconexión de lo real y una conexión a lo surreal</i></h6>
+      <p>Esta página web esta creada más que nada con el fin de facilitar una herramienta para visualizar películas 
+          con una sencillez para las personas inexpertas en la web y que así sea más sencillo la visualización de dicho entretenimiento.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Algo que poner</h3>
+      <p>El texto </p>
+      <p>Powered by: Los ayuwoquis <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Integrantes</h3>
+      <ul class="w3-ul w3-hoverable">
+       <!-- <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>-->
+        <li class="w3-padding-16">
+          <span class="w3-large">Guadalupe Rivera</span><br>
+          <span>El chispa</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">Carlos Hurtado</span><br>
+          <span>Churmo</span>
+        </li> 
+          <li class="w3-padding-16">
+          <span class="w3-large">Jared Ramirez</span><br>
+          <span>Dormamu</span>
+      </ul>
+    </div>
+      <div class="w3-third">
+      <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+          <span class="w3-large">Miguel Vazquez</span><br>
+          <span>Mensi</span>
+        </li> 
+          <li class="w3-padding-16">
+          <span class="w3-large">Ricardo Juárez</span><br>
+          <span>Rok</span>
+        </li>  
+      </ul>
+    </div>
+    
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
