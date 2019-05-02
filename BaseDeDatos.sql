@@ -17,8 +17,8 @@ UrlImagen varchar(300) not null,
 primary key(Nombre)
 );
 drop table peliculas;
-select * from usuarios;
+select * from peliculas;
 insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rok','Rika_js@outlook.com','admin','Rok');
 insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rika','icky_0307@hotmail.com','user','Rok');
 INSERT INTO Peliculas(Nombre, Descripccion, Autor, Ano, Genero, UrlVideo, UrlImagen) 
-VALUES ('Ready Player One','Buena peli','Steven Spielberg','2018',5,'https://www.youtube.com/watch?v=vDIg0N_pX94','img\ReadyPlayerOne.png');
+VALUES ('Ready Player One','Buena peli','Steven Spielberg','2018',5,'https://mega.nz/embed#!3d5nCA5R!osi7iZD2abALC7agwVRh0BgddpReMJkDl92rOq69KZM','ReadyPlayerOne.png');

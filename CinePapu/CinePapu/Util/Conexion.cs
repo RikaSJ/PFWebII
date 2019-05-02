@@ -138,7 +138,6 @@ namespace CinePapu.util
             }
             finally
             {
-
                 cnn.Close();
             }
             return ds;

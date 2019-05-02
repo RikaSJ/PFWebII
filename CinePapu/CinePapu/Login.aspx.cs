@@ -31,7 +31,7 @@ namespace CinePapu
                 }
                 else
                 {
-                    Response.Redirect("index.aspx");
+                    Response.Redirect("UserIndex.aspx");
                 }
                 
             }
