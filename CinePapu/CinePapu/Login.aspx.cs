@@ -28,7 +28,7 @@ namespace CinePapu
                 if (UsuariosDao.tipo(user).Equals("admin"))
                 {
                     String nom = UsuariosDao.Nombre(user);
-                    Response.Redirect("AdminIndex.aspx?=" + nom + "");
+                    Response.Redirect("AdminIndex.aspx?=id" + nom + "");
                 }
                 else
                 {
