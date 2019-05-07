@@ -14,7 +14,21 @@ namespace CinePapu
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          /*  try
+            {
+                if (Request.QueryString["id"].ToString().Equals(""))
+                {
+                    Response.Redirect("Index.aspx");
+                }
+                else
+                {
 
+                }
+            }
+            catch
+            {
+                Response.Redirect("Index.aspx");
+            }*/
         }
 
         protected void guardar_Click(object sender, EventArgs e)

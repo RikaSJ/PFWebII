@@ -43,5 +43,26 @@ namespace CinePapu.Daos
 
             return lista;
         }
+        public static List<Peliculas> getGenero(int Genero)
+        {
+            List<Peliculas> lista = new List<Peliculas>();
+            Conexion con = new Conexion();
+
+            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Genero = "+Genero+"");
+            DataTable dt = datos.Tables[0];
+            Peliculas pelis;
+            foreach (DataRow r in dt.Rows)
+            {
+
+                pelis = new Peliculas();
+                pelis.Nombre = (string)r.ItemArray[0];
+                pelis.Descriccion = (string)r.ItemArray[1];
+                pelis.UrlVideo = (string)r.ItemArray[5];
+                pelis.UrlImagen = (string)r.ItemArray[6];
+                lista.Add(pelis);
+            }
+
+            return lista;
+        }
     }
 }

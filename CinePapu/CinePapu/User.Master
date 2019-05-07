@@ -20,16 +20,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
   class="w3-bar-item w3-button">Cerrar Menu</a>
-  <a href="#CienciaFiccion" onclick="w3_close()" class="w3-bar-item w3-button">Ciencia Ficcion</a>
-  <a href="#Terror" onclick="w3_close()" class="w3-bar-item w3-button">Terror</a>
-  <a href="#Comedia" onclick="w3_close()" class="w3-bar-item w3-button">Comedia</a>
-  <a href="#Thriller" onclick="w3_close()" class="w3-bar-item w3-button">Thriller</a>
-  <a href="#Accion" onclick="w3_close()" class="w3-bar-item w3-button">Accion</a>
-  <a href="#Aventura" onclick="w3_close()" class="w3-bar-item w3-button">Aventura</a>
-  <a href="#Animada" onclick="w3_close()" class="w3-bar-item w3-button">Animada</a>
-  <a href="#Fantasia" onclick="w3_close()" class="w3-bar-item w3-button">Fantasia</a>
-  <a href="#Drama" onclick="w3_close()" class="w3-bar-item w3-button">Drama</a>
-  <a href="#Romanticas" onclick="w3_close()" class="w3-bar-item w3-button">Romanticas</a>
+  <a href="UserIndex.aspx?id=CP&genero=CienciaFiccion" onclick="w3_close()" class="w3-bar-item w3-button">Ciencia Ficcion</a>
+  <a href="UserIndex.aspx?id=CP&genero=Terror" onclick="w3_close()" class="w3-bar-item w3-button">Terror</a>
+  <a href="UserIndex.aspx?id=CP&genero=Comedia" onclick="w3_close()" class="w3-bar-item w3-button">Comedia</a>
+  <a href="UserIndex.aspx?id=CP&genero=Thriller" onclick="w3_close()" class="w3-bar-item w3-button">Thriller</a>
+  <a href="UserIndex.aspx?id=CP&genero=Accion" onclick="w3_close()" class="w3-bar-item w3-button">Accion</a>
+  <a href="UserIndex.aspx?id=CP&genero=Aventura" onclick="w3_close()" class="w3-bar-item w3-button">Aventura</a>
+  <a href="UserIndex.aspx?id=CP&genero=Animada" onclick="w3_close()" class="w3-bar-item w3-button">Animada</a>
+  <a href="UserIndex.aspx?id=CP&genero=Fantasia" onclick="w3_close()" class="w3-bar-item w3-button">Fantasia</a>
+  <a href="UserIndex.aspx?id=CP&genero=Drama" onclick="w3_close()" class="w3-bar-item w3-button">Drama</a>
+  <a href="UserIndex.aspx?id=CP&genero=Romanticas" onclick="w3_close()" class="w3-bar-item w3-button">Romanticas</a>
 </nav>
 
 <!-- Top menu -->
@@ -67,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   
   <hr id="about"/>
 
-  <!-- About Section -->
+  <!-- About Section 
   <div class="w3-container w3-padding-32 w3-center">  
     <h3>CinePapu</h3><br>
     <img src="img/LogoCP.png" alt="Me" class="w3-image" style="display:block;margin:auto" />
@@ -78,9 +78,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
           con una sencillez para las personas inexpertas en la web y que así sea más sencillo la visualización de dicho entretenimiento.</p>
     </div>
   </div>
-  <hr>
+  <hr>-->
   
-  <!-- Footer -->
+  <!-- Footer
   <footer class="w3-row-padding w3-padding-32">
     <div class="w3-third">
       <h3>Algo que poner</h3>
@@ -95,7 +95,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
           <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
           <span class="w3-large">Lorem</span><br>
           <span>Sed mattis nunc</span>
-        </li>-->
+        </li>
         <li class="w3-padding-16">
           <span class="w3-large">Guadalupe Rivera</span><br>
           <span>El chispa</span>
@@ -122,7 +122,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       </ul>
     </div>
     
-  </footer>
+  </footer> -->
 
 <!-- End page content -->
 </div>

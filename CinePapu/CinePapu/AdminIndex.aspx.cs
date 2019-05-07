@@ -9,9 +9,20 @@ namespace CinePapu
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (Request.QueryString["id"].ToString().Equals(""))
+                {
+                    Response.Redirect("Index.aspx");
+                }
+            }
+            catch
+            {
+                Response.Redirect("Index.aspx");
+            }
         }
     }
 }

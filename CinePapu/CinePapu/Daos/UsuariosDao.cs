@@ -70,5 +70,18 @@ namespace CinePapu.Daos
             String Tip = con.EjecutaSQLScalar(sqlCom);
             return Tip;
         }
+        public static String Nombre(Usuarios u)
+        {
+            Conexion con = new Conexion();
+            String SQL = "SELECT Nombre FROM Usuarios " +
+                "WHERE Email = @email AND Contrasena = @contrasena;";
+            MySqlCommand sqlCom = new MySqlCommand();
+            sqlCom.CommandText = SQL;
+            sqlCom.Parameters.AddWithValue("@email", u.Email);
+            sqlCom.Parameters.AddWithValue("@contrasena", u.Contrasena);
+            con.EjecutaSQLComando(sqlCom);
+            String Tip = con.EjecutaSQLScalar(sqlCom);
+            return Tip;
+        }
     }
 }

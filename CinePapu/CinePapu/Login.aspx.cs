@@ -27,11 +27,13 @@ namespace CinePapu
             {
                 if (UsuariosDao.tipo(user).Equals("admin"))
                 {
-                    Response.Redirect("AdminIndex.aspx");
+                    String nom = UsuariosDao.Nombre(user);
+                    Response.Redirect("AdminIndex.aspx?=" + nom + "");
                 }
                 else
                 {
-                    Response.Redirect("UserIndex.aspx");
+                    String nom = UsuariosDao.Nombre(user);
+                    Response.Redirect("UserIndex.aspx?id="+nom+"&gen=general");
                 }
                 
             }
