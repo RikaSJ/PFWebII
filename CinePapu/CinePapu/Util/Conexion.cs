@@ -21,12 +21,17 @@ namespace CinePapu.util
         public string GetConnectionString()
         {
             //Revisar: https://www.connectionstrings.com/mysql/
+            //String servidor = "localhost";
+            //String puerto = "3306";
+            //String usuario = "root";
+            //String password = "root";
+            //String database = "cinepapu";
 
-            String servidor = "localhost";
+            String servidor = "mysql5011.site4now.net";
             String puerto = "3306";
-            String usuario = "root";
-            String password = "root";
-            String database = "cinepapu";
+            String usuario = "a48cc2_cinepap";
+            String password = "cinepapu19";
+            String database = "db_a48cc2_cinepap";
 
             //Cadena de conexion
 

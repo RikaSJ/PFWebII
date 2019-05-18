@@ -16,7 +16,6 @@ namespace CinePapu
     {
         static Peliculas peli = new Peliculas();
         protected  IList<Peliculas> pelis;
-        static String id="";
         protected void Page_Load(object sender, EventArgs e)
         {
             try
