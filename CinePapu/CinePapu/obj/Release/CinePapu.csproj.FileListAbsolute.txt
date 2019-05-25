@@ -93,18 +93,6 @@ D:\Documentos\GitHub\PFWebII\CinePapu\CinePapu\obj\Release\CinePapu.csprojResolv
 D:\Documentos\GitHub\PFWebII\CinePapu\CinePapu\obj\Release\CinePapu.dll
 D:\Documentos\GitHub\PFWebII\CinePapu\CinePapu\obj\Release\CinePapu.pdb
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\ApplicationInsights.config
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\csc.exe
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\Microsoft.CodeAnalysis.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\Microsoft.CSharp.Core.targets
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\Microsoft.VisualBasic.Core.targets
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\System.Collections.Immutable.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\System.Reflection.Metadata.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\vbc.exe
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\VBCSCompiler.exe
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\roslyn\VBCSCompiler.exe.config
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\CinePapu.dll.config
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\CinePapu.dll
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\CinePapu.pdb
@@ -125,7 +113,6 @@ D:\Documentos\GitHub\PFWebII\CinePapu\CinePapu\obj\Release\CinePapu.pdb
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.AspNet.Identity.Owin.dll
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.Owin.dll
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.Owin.Host.SystemWeb.dll
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.Owin.Security.Cookies.dll
@@ -149,7 +136,6 @@ D:\Documentos\GitHub\PFWebII\CinePapu\CinePapu\obj\Release\CinePapu.pdb
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.AI.Web.xml
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.AI.WindowsServer.xml
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.ApplicationInsights.xml
-\\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\System.Web.Optimization.xml
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Antlr3.Runtime.pdb
 \\DESKTOP-5GF2U65\PFWebII\CinePapu\CinePapu\bin\Newtonsoft.Json.xml

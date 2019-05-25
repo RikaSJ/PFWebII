@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="UserIndex.aspx.cs" Inherits="CinePapu.UserIndex" %>
 <asp:Content ID="ListaPelis" ContentPlaceHolderID="ListaPelis" runat="server">
+
     <asp:Literal id="myLiteral" runat="server"  text="" />
 
    <!-- <div class="w3-row-padding w3-padding-16 w3-center" id="food">

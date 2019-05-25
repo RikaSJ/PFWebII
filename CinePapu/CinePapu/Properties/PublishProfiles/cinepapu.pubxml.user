@@ -6,7 +6,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\Escritorio\WebSite</_PublishTargetUrl>
+    <_PublishTargetUrl>ftp://ftp.site4now.net/cinepapu</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="About.aspx">
@@ -64,7 +64,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/01/2019 20:09:36</publishTime>
     </File>
     <File Include="AdminAgregar.aspx">
-      <publishTime>04/25/2019 16:42:07</publishTime>
+      <publishTime>05/24/2019 21:13:56</publishTime>
     </File>
     <File Include="AdminIndex.aspx">
       <publishTime>04/22/2019 14:24:17</publishTime>
@@ -91,7 +91,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>07/16/2013 21:06:22</publishTime>
     </File>
     <File Include="bin/CinePapu.dll">
-      <publishTime>05/17/2019 09:33:57</publishTime>
+      <publishTime>05/24/2019 22:13:18</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
@@ -562,7 +562,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>12/17/2017 01:30:34</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>04/22/2019 12:50:13</publishTime>
+      <publishTime>05/24/2019 20:33:36</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>05/17/2019 09:31:02</publishTime>
@@ -682,7 +682,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/07/2019 12:50:16</publishTime>
     </File>
     <File Include="UserIndex.aspx">
-      <publishTime>05/01/2019 19:46:29</publishTime>
+      <publishTime>05/24/2019 21:28:48</publishTime>
     </File>
     <File Include="vendor/animate/animate.css">
       <publishTime>08/31/2017 13:02:26</publishTime>
@@ -796,7 +796,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/17/2019 21:05:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/17/2019 09:33:58</publishTime>
+      <publishTime>05/24/2019 22:13:31</publishTime>
     </File>
   </ItemGroup>
 </Project>
