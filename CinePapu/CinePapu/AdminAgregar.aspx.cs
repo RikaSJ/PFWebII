@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 using CinePapu.Modelo;
 using CinePapu.Daos;
@@ -33,17 +34,36 @@ namespace CinePapu
 
         protected void guardar_Click(object sender, EventArgs e)
         {
+            Byte[] Archivo = null;
+            string nombreArchivo = string.Empty;
+            string extensionArchivo = string.Empty;
             Peliculas peli = new Peliculas();
-            peli.Nombre = txtnombre.Text;
-            peli.Descriccion = txtdescripccion.Text;
-            peli.Autor = txtAutor.Text;
-            peli.Ano = txtAno.Text;
-            peli.Genero = Genero();
-            peli.UrlVideo = txtUrlVideo.Text;
-            peli.UrlImagen = txtUrlImagen.Text;
+            if (fuSubirImagen.HasFile == true)
+            {
+                using (BinaryReader reader = new BinaryReader(fuSubirImagen.PostedFile.InputStream))
+                {
+                    Archivo = reader.ReadBytes(fuSubirImagen.PostedFile.ContentLength);
+                }
+                nombreArchivo = Path.GetFileNameWithoutExtension(fuSubirImagen.FileName);
+                extensionArchivo = Path.GetExtension(fuSubirImagen.FileName);
+                fuSubirImagen.SaveAs(Server.MapPath("img\\"+fuSubirImagen.FileName));
+                peli.Nombre = txtnombre.Text;
+                peli.Descriccion = txtdescripccion.Text;
+                peli.Autor = txtAutor.Text;
+                peli.Ano = txtAno.Text;
+                peli.Genero = Genero();
+                peli.UrlVideo = txtUrlVideo.Text;
+                peli.UrlImagen = nombreArchivo+extensionArchivo;
+                PeliculaDao.insert(peli);
+                Response.Redirect("AdminIndex.aspx?id=Rok");
+            }
+            else
+            {
 
-            PeliculaDao.insert(peli);
-            Response.Redirect("AdminIndex.aspx");
+            }
+            
+
+            
         }
         protected int Genero()
         {

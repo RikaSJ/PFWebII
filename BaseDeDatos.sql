@@ -20,6 +20,8 @@ insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rok','Rika_js@outloo
 insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rika','icky_0307@hotmail.com','user','Rok');
 INSERT INTO Peliculas(Nombre, Descripccion, Autor, Ano, Genero, UrlVideo, UrlImagen) 
 VALUES ('Ready Player One','Buena peli','Steven Spielberg','2018',5,'https://mega.nz/embed#!3d5nCA5R!osi7iZD2abALC7agwVRh0BgddpReMJkDl92rOq69KZM','ReadyPlayerOne.png');
+INSERT INTO Peliculas(Nombre, Descripccion, Autor, Ano, Genero, UrlVideo, UrlImagen) 
+VALUES ('Iron Man','Buena','S','2018',1,'https://www.youtube.com/watch?v=8hYlB38asDY','ironman.jpg');
 
 
 select * from peliculas;

@@ -70,9 +70,14 @@
                      <div class="wrap-input100">
                         <asp:TextBox ID="txtUrlVideo" runat="server"  placeholder="Url del video"  class="input100"  ></asp:TextBox>
 					</div>
-                     <div class="wrap-input100">
+                    <div class="wrap-input100" >
+                        Titulo de la imagen
+                        <asp:FileUpload ID="fuSubirImagen" runat="server" class="login100-form-btn" />
+
+                    </div>
+                    <!-- <div class="wrap-input100">
                         <asp:TextBox ID="txtUrlImagen" runat="server"  placeholder="nombre de la imagen con la extencion"  class="input100"  ></asp:TextBox>
-					</div>
+					</div>-->
                     <div id="alerta" runat="server">
                         <asp:Button ID="guardar" runat="server" Text="Guardar pelicula"  class="login100-form-btn" type="submit" OnClick="guardar_Click" />
                     </div>
