@@ -34,26 +34,17 @@ namespace CinePapu
 
         protected void guardar_Click(object sender, EventArgs e)
         {
-            Byte[] Archivo = null;
-            string nombreArchivo = string.Empty;
-            string extensionArchivo = string.Empty;
             Peliculas peli = new Peliculas();
             if (fuSubirImagen.HasFile == true)
             {
-                using (BinaryReader reader = new BinaryReader(fuSubirImagen.PostedFile.InputStream))
-                {
-                    Archivo = reader.ReadBytes(fuSubirImagen.PostedFile.ContentLength);
-                }
-                nombreArchivo = Path.GetFileNameWithoutExtension(fuSubirImagen.FileName);
-                extensionArchivo = Path.GetExtension(fuSubirImagen.FileName);
-                fuSubirImagen.SaveAs(Server.MapPath("img\\"+fuSubirImagen.FileName));
+                fuSubirImagen.SaveAs(Server.MapPath("img\\"+Path.GetFileName(fuSubirImagen.FileName)));
                 peli.Nombre = txtnombre.Text;
                 peli.Descriccion = txtdescripccion.Text;
                 peli.Autor = txtAutor.Text;
                 peli.Ano = txtAno.Text;
                 peli.Genero = Genero();
                 peli.UrlVideo = txtUrlVideo.Text;
-                peli.UrlImagen = nombreArchivo+extensionArchivo;
+                peli.UrlImagen = Path.GetFileNameWithoutExtension(fuSubirImagen.FileName)+Path.GetExtension(fuSubirImagen.FileName);
                 PeliculaDao.insert(peli);
                 Response.Redirect("AdminIndex.aspx?id=Rok");
             }
