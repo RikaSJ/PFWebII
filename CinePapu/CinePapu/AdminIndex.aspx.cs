@@ -18,6 +18,10 @@ namespace CinePapu
                 {
                     Response.Redirect("Index.aspx");
                 }
+                if (Request.PathInfo.Length != 0)
+                {
+                    Request.PathInfo.Substring(1);
+                }
             }
             catch
             {

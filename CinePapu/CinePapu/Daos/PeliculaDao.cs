@@ -12,6 +12,12 @@ namespace CinePapu.Daos
 {
     public class PeliculaDao
     {
+        public static DataSet Todas()
+        {
+            Conexion con = new Conexion();
+            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas");
+            return datos;
+        }
         public static void insert(Peliculas p)
         {
             Conexion con = new Conexion();

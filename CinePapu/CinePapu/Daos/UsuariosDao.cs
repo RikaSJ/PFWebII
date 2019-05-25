@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 
 using CinePapu.Modelo;
 using CinePapu.util;
@@ -11,6 +12,12 @@ namespace CinePapu.Daos
 {
     public class UsuariosDao
     {
+        public static DataSet Todos()
+        {
+            Conexion con = new Conexion();
+            DataSet datos = con.LLenaComboGrid("SELECT Nombre,Email,Tipo FROM usuarios");
+            return datos;
+        }
         public static void insertU(Usuarios u)
         {
             Conexion con = new Conexion();
