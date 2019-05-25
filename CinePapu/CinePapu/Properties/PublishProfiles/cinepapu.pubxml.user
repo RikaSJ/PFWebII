@@ -61,13 +61,19 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/17/2019 21:05:41</publishTime>
     </File>
     <File Include="Admin.Master">
-      <publishTime>05/01/2019 20:09:36</publishTime>
+      <publishTime>05/25/2019 11:36:36</publishTime>
     </File>
     <File Include="AdminAgregar.aspx">
       <publishTime>05/24/2019 21:13:56</publishTime>
     </File>
     <File Include="AdminIndex.aspx">
       <publishTime>04/22/2019 14:24:17</publishTime>
+    </File>
+    <File Include="AdminPelis.aspx">
+      <publishTime>05/25/2019 14:56:22</publishTime>
+    </File>
+    <File Include="AdminUsuarios.aspx">
+      <publishTime>05/25/2019 14:48:24</publishTime>
     </File>
     <File Include="ApplicationInsights.config">
       <publishTime>04/17/2019 21:06:06</publishTime>
@@ -91,7 +97,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>07/16/2013 21:06:22</publishTime>
     </File>
     <File Include="bin/CinePapu.dll">
-      <publishTime>05/24/2019 22:13:18</publishTime>
+      <publishTime>05/25/2019 14:56:44</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
@@ -531,6 +537,9 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     <File Include="img/bg-01.jpg">
       <publishTime>12/17/2017 02:10:28</publishTime>
     </File>
+    <File Include="img/descarga.jpg">
+      <publishTime>05/24/2019 23:08:58</publishTime>
+    </File>
     <File Include="img/dumbo.jpg">
       <publishTime>02/09/2019 21:02:18</publishTime>
     </File>
@@ -679,7 +688,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/17/2019 21:05:39</publishTime>
     </File>
     <File Include="User.Master">
-      <publishTime>05/07/2019 12:50:16</publishTime>
+      <publishTime>05/25/2019 10:45:42</publishTime>
     </File>
     <File Include="UserIndex.aspx">
       <publishTime>05/24/2019 21:28:48</publishTime>
@@ -796,7 +805,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/17/2019 21:05:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/24/2019 22:13:31</publishTime>
+      <publishTime>05/25/2019 14:57:42</publishTime>
     </File>
   </ItemGroup>
 </Project>
