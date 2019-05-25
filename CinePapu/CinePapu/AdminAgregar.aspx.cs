@@ -15,23 +15,9 @@ namespace CinePapu
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          /*  try
-            {
-                if (Request.QueryString["id"].ToString().Equals(""))
-                {
-                    Response.Redirect("Index.aspx");
-                }
-                else
-                {
-
-                }
-            }
-            catch
-            {
-                Response.Redirect("Index.aspx");
-            }*/
+          
         }
-
+        //Se guardan todos los datos de donde agregaste la pelicula  para despues mostrarlos en la pelicula que subiste
         protected void guardar_Click(object sender, EventArgs e)
         {
             Peliculas peli = new Peliculas();
@@ -56,6 +42,7 @@ namespace CinePapu
 
             
         }
+        //Son los tipos de genero en un metodo, dependiendo del genero que escogiste lo guardara 
         protected int Genero()
         {
             if (Tipos.Value.Equals("Ciencia ficcion"))
