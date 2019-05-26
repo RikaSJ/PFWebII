@@ -269,6 +269,8 @@
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
     <Content Include="Admin.Master" />
     <Content Include="AdminIndex.aspx" />
+    <Content Include="WSs\WSPelicula.asmx" />
+    <Content Include="WSs\WSUsuarios.asmx" />
     <None Include="Properties\PublishProfiles\cinepapu.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="fonts\iconic\css\material-design-iconic-font.css" />
@@ -617,6 +619,14 @@
     </Compile>
     <Compile Include="AdminIndex.aspx.designer.cs">
       <DependentUpon>AdminIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WSs\WSPelicula.asmx.cs">
+      <DependentUpon>WSPelicula.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSs\WSUsuarios.asmx.cs">
+      <DependentUpon>WSUsuarios.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

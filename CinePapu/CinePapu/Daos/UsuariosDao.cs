@@ -23,6 +23,7 @@ namespace CinePapu.Daos
             sqlCom.Parameters.AddWithValue("@email", u.Email);
             sqlCom.Parameters.AddWithValue("@contrasena", u.Contrasena);
             con.EjecutaSQLComando(sqlCom);
+            
         }
         public static void insertA(Usuarios u)
         {
