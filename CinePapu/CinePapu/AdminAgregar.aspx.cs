@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 using CinePapu.Modelo;
 using CinePapu.Daos;
@@ -14,37 +15,34 @@ namespace CinePapu
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          /*  try
-            {
-                if (Request.QueryString["id"].ToString().Equals(""))
-                {
-                    Response.Redirect("Index.aspx");
-                }
-                else
-                {
-
-                }
-            }
-            catch
-            {
-                Response.Redirect("Index.aspx");
-            }*/
+          
         }
-
+        //Se guardan todos los datos de donde agregaste la pelicula  para despues mostrarlos en la pelicula que subiste
         protected void guardar_Click(object sender, EventArgs e)
         {
             Peliculas peli = new Peliculas();
-            peli.Nombre = txtnombre.Text;
-            peli.Descriccion = txtdescripccion.Text;
-            peli.Autor = txtAutor.Text;
-            peli.Ano = txtAno.Text;
-            peli.Genero = Genero();
-            peli.UrlVideo = txtUrlVideo.Text;
-            peli.UrlImagen = txtUrlImagen.Text;
+            if (fuSubirImagen.HasFile == true)
+            {
+                fuSubirImagen.SaveAs(Server.MapPath("img\\"+Path.GetFileName(fuSubirImagen.FileName)));
+                peli.Nombre = txtnombre.Text;
+                peli.Descriccion = txtdescripccion.Text;
+                peli.Autor = txtAutor.Text;
+                peli.Ano = txtAno.Text;
+                peli.Genero = Genero();
+                peli.UrlVideo = txtUrlVideo.Text;
+                peli.UrlImagen = Path.GetFileNameWithoutExtension(fuSubirImagen.FileName)+Path.GetExtension(fuSubirImagen.FileName);
+                PeliculaDao.insert(peli);
+                Response.Redirect("AdminIndex.aspx?id=Rok");
+            }
+            else
+            {
 
-            PeliculaDao.insert(peli);
-            Response.Redirect("AdminIndex.aspx");
+            }
+            
+
+            
         }
+        //Son los tipos de genero en un metodo, dependiendo del genero que escogiste lo guardara 
         protected int Genero()
         {
             if (Tipos.Value.Equals("Ciencia ficcion"))

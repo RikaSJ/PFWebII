@@ -35,7 +35,7 @@
 	<div class="limiter">
 		<div class="container-login100" style = " background-image: url('img/bg-01.jpg'); ">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" runat="server"> 
+				<form class="login100-form validate-form" runat="server" method="post"> 
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -65,7 +65,7 @@
                         <h5>!Usuario incorrecto</h5>
                     </div>
 					<div class="container-login100-form-btn">
-                        <asp:Button ID="Iniciar" runat="server" Text="Iniciar Sesion"  class="login100-form-btn" type="submit" OnClick="Iniciar_Click"/>
+                        <asp:Button ID="Iniciar" runat="server" Text="Iniciar Sesion"  class="login100-form-btn"  OnClick="Iniciar_Click" />
                         <asp:Button ID="Registrar" runat="server" Text="Registrarse"  class="login100-form-btn" OnClick="Registrar_Click"/>
 					</div>
 

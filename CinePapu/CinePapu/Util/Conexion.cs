@@ -25,7 +25,7 @@ namespace CinePapu.util
             //String puerto = "3306";
             //String usuario = "root";
             //String password = "root";
-            //String database = "cinepapu";
+            //String database = "cinepapu";sma
 
             String servidor = "mysql5011.site4now.net";
             String puerto = "3306";

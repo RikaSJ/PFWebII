@@ -194,6 +194,8 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AdminAgregar.aspx" />
+    <Content Include="AdminPelis.aspx" />
+    <Content Include="AdminUsuarios.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -287,6 +289,7 @@
     <Content Include="img\avengers.jpg" />
     <Content Include="img\avengers2.jpg" />
     <Content Include="img\bg-01.jpg" />
+    <Content Include="img\descarga.jpg" />
     <Content Include="img\dumbo.jpg" />
     <Content Include="img\dun.jpg" />
     <Content Include="img\icons\favicon.ico" />
@@ -366,7 +369,9 @@
     <Content Include="vendor\select2\select2.min.css" />
     <Content Include="vendor\select2\select2.min.js" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -506,6 +511,20 @@
     </Compile>
     <Compile Include="AdminAgregar.aspx.designer.cs">
       <DependentUpon>AdminAgregar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPelis.aspx.cs">
+      <DependentUpon>AdminPelis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPelis.aspx.designer.cs">
+      <DependentUpon>AdminPelis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsuarios.aspx.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUsuarios.aspx.designer.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
