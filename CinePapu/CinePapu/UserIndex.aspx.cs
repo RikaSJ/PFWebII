@@ -28,12 +28,24 @@ namespace CinePapu
                 {
                     if (Request.QueryString["id"].ToString().Equals("CP"))
                     {
-
-                    }else
+                        if ((Request.QueryString["genero"].ToString().Equals("general")))
+                        {
+                            LlenarVista();
+                        }
+                        else
+                        {
+                            ComprobarGenero();
+                        }
+                    }
+                    else
                     {
                         if ((Request.QueryString["gen"].ToString().Equals("general")))
                         {
                             LlenarVista();
+                        }
+                        else
+                        {
+                            ComprobarGenero();
                         }
                     }                    
                 }
