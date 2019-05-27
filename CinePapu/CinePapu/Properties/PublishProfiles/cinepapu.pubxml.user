@@ -97,7 +97,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>07/16/2013 21:06:22</publishTime>
     </File>
     <File Include="bin/CinePapu.dll">
-      <publishTime>05/26/2019 19:17:08</publishTime>
+      <publishTime>05/26/2019 21:12:38</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
