@@ -70,5 +70,45 @@ namespace CinePapu.Daos
 
             return lista;
         }
+        public static Peliculas getById(String Id)
+        {
+            
+            Conexion con = new Conexion();
+
+            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Nombre = " + Id + "");
+            DataTable dt = datos.Tables[0];
+            Peliculas pelis=new Peliculas();
+            foreach (DataRow r in dt.Rows)
+            {                
+                pelis.Nombre = (string)r.ItemArray[0];
+                pelis.Descriccion = (string)r.ItemArray[1];
+                pelis.UrlVideo = (string)r.ItemArray[5];
+                pelis.UrlImagen = (string)r.ItemArray[6];   
+            }
+
+
+            return pelis;
+        }
+        public static List<Peliculas> getLiked(String idUsuario)
+        {
+            List<Peliculas> lista = new List<Peliculas>();
+            Conexion con = new Conexion();
+
+            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Nombre in (SELECt Nombre from Interacciones where Email ='" + idUsuario + "' and liked = true group by Nombre)");
+            DataTable dt = datos.Tables[0];
+            Peliculas pelis;
+            foreach (DataRow r in dt.Rows)
+            {
+
+                pelis = new Peliculas();
+                pelis.Nombre = (string)r.ItemArray[0];
+                pelis.Descriccion = (string)r.ItemArray[1];
+                pelis.UrlVideo = (string)r.ItemArray[5];
+                pelis.UrlImagen = (string)r.ItemArray[6];
+                lista.Add(pelis);
+            }
+
+            return lista;
+        }
     }
 }

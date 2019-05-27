@@ -271,6 +271,7 @@
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
     <Content Include="Admin.Master" />
     <Content Include="AdminIndex.aspx" />
+    <Content Include="WSs\WSInteraccion.asmx" />
     <Content Include="WSs\WSPelicula.asmx" />
     <Content Include="WSs\WSUsuarios.asmx" />
     <None Include="Properties\PublishProfiles\cinepapu.pubxml" />
@@ -544,6 +545,7 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Daos\InteraccionDao.cs" />
     <Compile Include="Daos\PeliculaDao.cs" />
     <Compile Include="Daos\UsuariosDao.cs" />
     <Compile Include="Default.aspx.cs">
@@ -577,6 +579,7 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\Interaccion.cs" />
     <Compile Include="Modelo\Peliculas.cs" />
     <Compile Include="Modelo\Usuarios.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -638,6 +641,10 @@
     </Compile>
     <Compile Include="AdminIndex.aspx.designer.cs">
       <DependentUpon>AdminIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WSs\WSInteraccion.asmx.cs">
+      <DependentUpon>WSInteraccion.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="WSs\WSPelicula.asmx.cs">
       <DependentUpon>WSPelicula.asmx</DependentUpon>

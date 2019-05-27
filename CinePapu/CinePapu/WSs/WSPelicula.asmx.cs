@@ -54,7 +54,21 @@ namespace CinePapu.WSs
 
         }
 
+        [WebMethod]
+        public string WSGetLiked()
+        {
 
+            List<Modelo.Peliculas> lista = Daos.PeliculaDao.getLiked("Efrain_jared@hotmail.com");
+            String strJSON;
+
+            strJSON = JsonConvert.SerializeObject(lista,
+                          new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+            List<Modelo.Peliculas> d = JsonConvert.DeserializeObject<List<Modelo.Peliculas>>(strJSON);
+
+
+            return strJSON;
+
+        }
 
     }
 }

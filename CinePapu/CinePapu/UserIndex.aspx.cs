@@ -116,7 +116,7 @@ namespace CinePapu
             foreach (var dr in pelis)
             {
                
-                contenido += "<div class=\"w3-quarter\">";
+                contenido += "<div class=\"w3-quarter w3-hover-opacity\">";
                 contenido += "<img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" />";
                 contenido += "<h3>" + dr.Nombre + "</h3>";
                 contenido += "<p>" + dr.Descriccion + "</p>";
