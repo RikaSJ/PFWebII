@@ -6,6 +6,7 @@
 <head>
 	<title>Registro</title>
 	<meta charset="UTF-8"/>
+	<!--Hace responsive la pagina -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="img/icons/favicon.ico"/>
@@ -33,32 +34,37 @@
 <body>
 	
 	<div class="limiter">
+		<!--Imagen de la ventana de registro-->
 		<div class="container-login100" style = " background-image: url('img/bg-01.jpg'); ">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" runat="server"> 
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
-
+				<!--Solo va a imprimir el texto (registro)-->
 					<span class="login100-form-title p-b-34 p-t-27">
 						Registrate
 					</span>
-
+				<!--Caja de texo que pide el nombre del usuario-->
 					<div class="wrap-input100 validate-input" >
                         <asp:TextBox ID="txtusuario" runat="server" placeholder="Nombre del usuario" required="" class="input100" ></asp:TextBox>	
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>		
+				<!--Caja de texto que pide el correo electronico-->
                     <div class="wrap-input100 validate-input" >
                         <asp:TextBox ID="txtEmail" runat="server" placeholder="Email" required="" class="input100" ></asp:TextBox>						
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>	
+				<!--Caja de texto que te pide la contraseña-->
                     <div class="wrap-input100 validate-input" >
-                        <asp:TextBox ID="txtContrasenia" runat="server" placeholder="Contraseñia" required="" class="input100" TextMode="Password"></asp:TextBox>						
+                        <asp:TextBox ID="txtContrasenia" runat="server" placeholder="Contraseña" required="" class="input100" TextMode="Password"></asp:TextBox>						
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>	
+				<!--Es un mensje que aparece si le das clic en el boton registrar sin escribir los datos que se piden-->
                     <div id="alerta" runat="server">
                         <h5>!Llena todos los campos</h5>
                     </div>
+				<!--Boton que registra al usuario-->
 					<div class="container-login100-form-btn">
                         <asp:Button ID="Registrar" runat="server" Text="Registrarse"  class="login100-form-btn" OnClick="Registrar_Click" />
 					</div>
