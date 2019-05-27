@@ -64,7 +64,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/25/2019 11:36:36</publishTime>
     </File>
     <File Include="AdminAgregar.aspx">
-      <publishTime>05/24/2019 21:13:56</publishTime>
+      <publishTime>05/26/2019 19:05:46</publishTime>
     </File>
     <File Include="AdminIndex.aspx">
       <publishTime>04/22/2019 14:24:17</publishTime>
@@ -97,7 +97,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>07/16/2013 21:06:22</publishTime>
     </File>
     <File Include="bin/CinePapu.dll">
-      <publishTime>05/25/2019 14:56:44</publishTime>
+      <publishTime>05/26/2019 19:17:08</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
@@ -580,10 +580,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>05/17/2019 00:20:59</publishTime>
     </File>
     <File Include="Principal.Master">
-      <publishTime>05/07/2019 10:05:02</publishTime>
+      <publishTime>05/26/2019 19:05:46</publishTime>
     </File>
     <File Include="Registro.aspx">
-      <publishTime>05/16/2019 23:48:46</publishTime>
+      <publishTime>05/26/2019 19:05:46</publishTime>
     </File>
     <File Include="Scripts/ai.0.22.9-build00167.js">
       <publishTime>04/17/2019 21:06:09</publishTime>
@@ -688,7 +688,7 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
       <publishTime>04/17/2019 21:05:39</publishTime>
     </File>
     <File Include="User.Master">
-      <publishTime>05/25/2019 10:45:42</publishTime>
+      <publishTime>05/26/2019 19:14:38</publishTime>
     </File>
     <File Include="UserIndex.aspx">
       <publishTime>05/24/2019 21:28:48</publishTime>
@@ -806,6 +806,12 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
     </File>
     <File Include="Web.config">
       <publishTime>05/25/2019 14:57:42</publishTime>
+    </File>
+    <File Include="WSs/WSPelicula.asmx">
+      <publishTime>05/26/2019 19:05:46</publishTime>
+    </File>
+    <File Include="WSs/WSUsuarios.asmx">
+      <publishTime>05/26/2019 19:05:46</publishTime>
     </File>
   </ItemGroup>
 </Project>

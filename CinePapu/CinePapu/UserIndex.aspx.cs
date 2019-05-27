@@ -137,7 +137,7 @@ namespace CinePapu
             {
                 contenido = "<div class=\"w3 - row - padding w3 - padding - 16 w3 - center\" id=\"food\">";
                 contenido += "<div class=\"w3 - quarter\">";
-                contenido += "<img src=\" img\\" + dr.UrlImagen + " \"  style=\"width: 100 % \" />";
+                contenido += "<img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" />";
                 contenido += "<h3>" + dr.Nombre + "</h3>";
                 contenido += "<p>" + dr.Descriccion + "</p>";
                 contenido += "<a href=\"" + dr.UrlVideo + "\">Ver pelicula</a>";
