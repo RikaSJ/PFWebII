@@ -18,13 +18,13 @@ namespace CinePapu
             {
                 Nombre= Convert.ToString(Request.QueryString["peli"]),
         };
-            txtTitulo.Text ="Titulo: "+select.Nombre;
+            txtTitulo.Text = "Titulo: " + select.Nombre;
 
-            txtDescripcion.Text = "Descripcion: /n" +select.Descriccion;
-            txtAno.Text = "Año: "+select.Ano;
+            txtDescripcion.Text = "Descripcion: /n" + select.Descriccion;
+            txtAno.Text = "Año: " + select.Ano;
             WSPelicula WSPeli = new WSPelicula();
             String selected = WSPeli.WSGetLiked();
-            ImagenPeli.ImageUrl = "img/"+select.UrlImagen;
+            ImagenPeli.ImageUrl = "img/" + select.UrlImagen;
             UrlPeli.Attributes.Add("src", select.UrlVideo);
             List<Peliculas> lista = null;
 
