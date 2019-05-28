@@ -5,6 +5,7 @@ using System.Web;
 
 namespace CinePapu.Modelo
 {
+    //clase para definir una pelicula
     public class Peliculas
     {
         public String Nombre { get; set; }
