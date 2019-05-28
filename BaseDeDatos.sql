@@ -1,4 +1,4 @@
--- Se crea la base de datos
+﻿-- Se crea la base de datos
 create database cinepapu;
 -- Se utiliza la base de datos
 use cinepapu;
@@ -20,6 +20,18 @@ Genero enum('Ciencia ficcion','Terror',' Comedia',' Thriller',' Accion',' Aventu
 UrlVideo varchar(300) not null,
 UrlImagen varchar(300) not null,
 primary key(Nombre)
+);
+
+CREATE TABLE Interacciones
+(	
+	idInteraccion int Not Null primary key auto_increment,
+    Email Varchar(150) NOT NULL,
+    Nombre Varchar(150) NOT NULL,
+    Comentario   longtext,
+    Liked		bool,    
+    INDEX (Email),
+    FOREIGN KEY (Email) REFERENCES usuarios(Email),
+    FOREIGN KEY (Nombre) REFERENCES Peliculas(Nombre)
 );
 
 -- Insertamos 2 usuarios
