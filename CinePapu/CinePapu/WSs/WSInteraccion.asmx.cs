@@ -21,16 +21,23 @@ namespace CinePapu.WSs
     public class WSInteraccion : System.Web.Services.WebService
     {
 
+        //método para obtener la interacción
         [WebMethod]
-        public string WSGetInteraccion()
+        public string WSGetInteraccion(String Nombre)
         {
+<<<<<<< HEAD
 
+            List<Modelo.Interaccion> lista = InteraccionDao.getComentarios("Ready Player One");
+=======
+            //obtiene una lista con los comentarios hecos por el usuario en cierta pelicula
             List<Modelo.Interaccion> lista = InteraccionDao.getComentarios("Efrain_jared@hotmail.com", "Ready Player One");
+>>>>>>> b897a825c3be9f4f4887c72144d14dafe341e7b8
             
             String strJSON;
-
+            //convierte en objeto JSON la lista 
             strJSON = JsonConvert.SerializeObject(lista,
                           new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+
             List<Modelo.Peliculas> d = JsonConvert.DeserializeObject<List<Modelo.Peliculas>>(strJSON);
 
 

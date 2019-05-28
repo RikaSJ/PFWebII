@@ -4,10 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using CinePapu.WSs;
 using CinePapu.Daos;
 using CinePapu.Modelo;
 using System.Data;
+using Newtonsoft.Json;
 
 namespace CinePapu
 {
@@ -111,43 +112,39 @@ namespace CinePapu
 
         protected void LlenarVista()
         {
-            String contenido="";
-                pelis = PeliculaDao.getAll();
-             contenido += "<div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\">";
+            String JsonPelis = new WSPelicula().WSGetAll();
+
+            IList<Peliculas> pelis = JsonConvert.DeserializeObject<IList<Peliculas>>(JsonPelis);
+            //pelis = PeliculaDao.getAll();
+            llenarPeliculas(pelis);
+            
+        }
+        protected void LlenarGenero(int Genero)
+        {
+            String JsonPelis = new WSPelicula().WSgetGenero(Genero);
+
+            IList<Peliculas> pelis = JsonConvert.DeserializeObject<IList<Peliculas>>(JsonPelis);
+            //pelis = PeliculaDao.getGenero(Genero);
+            llenarPeliculas(pelis);
+
+        }
+        public void llenarPeliculas(IList<Peliculas> pelis)
+        {
+            String contenido = "";
+
+            contenido += "<div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\">";
             foreach (var dr in pelis)
             {
-               
+
                 contenido += "<div class=\"w3-quarter w3-hover-opacity w3-hover-shadow \">";
                 contenido += "<a href=\"UserDescripcionPelicula.aspx?peli=" + dr.Nombre + "\"><img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" /></a>";
                 contenido += "<h3>" + dr.Nombre + "</h3>";
                 contenido += "<p>" + dr.Descriccion + "</p>";
                 contenido += "<a href=\"" + dr.UrlVideo + "\">Ver pelicula directamente</a>";
                 contenido += "</div>";
-                
-            }
-            contenido += "</div>";
-            myLiteral.Text = contenido;
-
-        }
-        protected void LlenarGenero(int Genero)
-        {
-
-            pelis = PeliculaDao.getGenero(Genero);
-            
-            String contenido = "<div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\">";
-            foreach (var dr in pelis)
-            {
-
-                contenido += "<div class=\"w3-quarter w3-hover-opacity w3-hover-shadow \">";
-                contenido += "<a href=\"UserDescripcionPelicula.aspx?peli=" + dr.Nombre + "\"><img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" /></a>";
-                contenido += "<h3>" + dr.Nombre + "</h3>";
-                contenido += "<p>" + dr.Descriccion + "</p>";
-                contenido += "<a href=\"" + dr.UrlVideo + "\">Ver pelicula</a>";
-                contenido += "</div>";
 
             }
             contenido += "</div>";
-
             myLiteral.Text = contenido;
 
         }

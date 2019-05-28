@@ -271,6 +271,7 @@
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
     <Content Include="Admin.Master" />
     <Content Include="AdminIndex.aspx" />
+    <Content Include="img\usuario-sin-foto.png" />
     <Content Include="UserDescripcionPelicula.aspx" />
     <Content Include="WSs\WSInteraccion.asmx" />
     <Content Include="WSs\WSPelicula.asmx" />
