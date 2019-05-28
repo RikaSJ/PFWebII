@@ -12,14 +12,18 @@ namespace CinePapu.Daos
 {
     public class InteraccionDao
     {
+        //obtener los comentarios de los usuarios mediante el email
         public static List<Interaccion> getComentarios(String Email, String Nombre)
         {
             List<Interaccion> lista = new List<Interaccion>();
             Conexion con = new Conexion();
 
+            //consulta a la base de datos para obtener los comentarios
             DataSet datos = con.LLenaComboGrid("SELECT * FROM Interacciones where Email = '"+ Email +"' and Nombre = '"+ Nombre +"'");
+            //tabla donde serán almacenados los datos
             DataTable dt = datos.Tables[0];
             Interaccion interaccion;
+            //llenar la tabla siempre y cuando haya comentarios
             foreach (DataRow r in dt.Rows)
             {
                 if (((string)r.ItemArray[3])!="")
