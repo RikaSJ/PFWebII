@@ -87,13 +87,10 @@ namespace CinePapu.Daos
         {
             
             Conexion con = new Conexion();
-<<<<<<< HEAD
 
-            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Nombre = '" + Id + "'");
-=======
             //consulta que obtiene el id de la pelicula
             DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Nombre = " + Id + "");
->>>>>>> b897a825c3be9f4f4887c72144d14dafe341e7b8
+
             DataTable dt = datos.Tables[0];
             Peliculas pelis=new Peliculas();
             //Llena el DataTable con el id de la pelicula
