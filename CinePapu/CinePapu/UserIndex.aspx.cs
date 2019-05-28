@@ -15,6 +15,7 @@ namespace CinePapu
     public partial class UserIndex : System.Web.UI.Page
     {
         static Peliculas peli = new Peliculas();
+        
         protected  IList<Peliculas> pelis;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -110,17 +111,17 @@ namespace CinePapu
 
         protected void LlenarVista()
         {
-
-            pelis = PeliculaDao.getAll();
-            String contenido = "<div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\">";
+            String contenido="";
+                pelis = PeliculaDao.getAll();
+             contenido += "<div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\">";
             foreach (var dr in pelis)
             {
                
-                contenido += "<div class=\"w3-quarter w3-hover-opacity\">";
-                contenido += "<img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" />";
+                contenido += "<div class=\"w3-quarter w3-hover-opacity w3-hover-shadow \">";
+                contenido += "<a href=\"UserDescripcionPelicula.aspx?peli=" + dr.Nombre + "\"><img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" /></a>";
                 contenido += "<h3>" + dr.Nombre + "</h3>";
                 contenido += "<p>" + dr.Descriccion + "</p>";
-                contenido += "<a href=\"" + dr.UrlVideo + "\">Ver pelicula</a>";
+                contenido += "<a href=\"" + dr.UrlVideo + "\">Ver pelicula directamente</a>";
                 contenido += "</div>";
                 
             }
@@ -132,18 +133,20 @@ namespace CinePapu
         {
 
             pelis = PeliculaDao.getGenero(Genero);
-            String contenido = "";
+            
+            String contenido = "<div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\">";
             foreach (var dr in pelis)
             {
-                contenido = "<div class=\"w3 - row - padding w3 - padding - 16 w3 - center\" id=\"food\">";
-                contenido += "<div class=\"w3 - quarter\">";
-                contenido += "<img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" />";
+
+                contenido += "<div class=\"w3-quarter w3-hover-opacity w3-hover-shadow \">";
+                contenido += "<a href=\"UserDescripcionPelicula.aspx?peli=" + dr.Nombre + "\"><img src=\" img\\" + dr.UrlImagen + " \"  width=\"220\" height=\"326\" \" /></a>";
                 contenido += "<h3>" + dr.Nombre + "</h3>";
                 contenido += "<p>" + dr.Descriccion + "</p>";
                 contenido += "<a href=\"" + dr.UrlVideo + "\">Ver pelicula</a>";
                 contenido += "</div>";
-                contenido += "</div>";
+
             }
+            contenido += "</div>";
 
             myLiteral.Text = contenido;
 

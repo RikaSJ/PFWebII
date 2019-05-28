@@ -271,6 +271,7 @@
     <Content Include="fonts\poppins\Poppins-ThinItalic.ttf" />
     <Content Include="Admin.Master" />
     <Content Include="AdminIndex.aspx" />
+    <Content Include="UserDescripcionPelicula.aspx" />
     <Content Include="WSs\WSInteraccion.asmx" />
     <Content Include="WSs\WSPelicula.asmx" />
     <Content Include="WSs\WSUsuarios.asmx" />
@@ -619,6 +620,13 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserDescripcionPelicula.aspx.cs">
+      <DependentUpon>UserDescripcionPelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserDescripcionPelicula.aspx.designer.cs">
+      <DependentUpon>UserDescripcionPelicula.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserIndex.aspx.cs">
       <DependentUpon>UserIndex.aspx</DependentUpon>

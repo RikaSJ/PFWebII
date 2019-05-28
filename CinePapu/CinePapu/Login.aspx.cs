@@ -11,6 +11,7 @@ namespace CinePapu
 {
     public partial class Login : System.Web.UI.Page
     {
+        public static Usuarios sesion = new Usuarios();
         protected void Page_Load(object sender, EventArgs e)
         {
             alerta.Visible = false;
@@ -33,7 +34,9 @@ namespace CinePapu
                 else
                 {
                     String nom = UsuariosDao.Nombre(user);
+                    sesion.Nombre = nom;
                     Response.Redirect("UserIndex.aspx?id="+nom+"&gen=general");
+
                 }
                 
             }
