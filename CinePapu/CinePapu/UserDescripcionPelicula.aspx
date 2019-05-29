@@ -21,8 +21,9 @@
                 </div>
 
                 <div class="w3-display-topright ">
+                   
+                    <asp:Button ID="btnLike" runat="server" Text="Like" Class="w3-btn" OnClick="Button1_Click" />
 
-                    Like 
                 </div>
 
             </div>
@@ -55,5 +56,6 @@
                         
                     </div>
 
+    </div>
     </div>
 </asp:Content>

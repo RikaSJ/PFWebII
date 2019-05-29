@@ -30,6 +30,10 @@ namespace CinePapu
 
             llenarComentarios(listaInteracciones);
 
+            //evaluar si la pelicula tiene like
+            //agregar un metodo a DaoInteraccion que reciba un String del nombre de la pelicula y haga la consulta de sus interacciones
+            
+            // si si cambias el color al boton like y lo desabilitas
 
         }
 
@@ -74,5 +78,13 @@ namespace CinePapu
         }
         }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            // funcionalidad
+            // generar una interaccion con el comentario vacio
+            // guardar con el WSInteraccion agregar interaccion
+            // recargas la pagina
+
+        }
     }
 }
