@@ -16,42 +16,34 @@ namespace CinePapu.WSs
     // [System.Web.Script.Services.ScriptService]
     public class WSUsuarios : System.Web.Services.WebService
     {
-        //método para insertar un usuario
+
         [WebMethod]
         public void WSinsertU(Modelo.Usuarios nuevo)
         {
-            //inserta un usuario
             Daos.UsuariosDao.insertU(nuevo);
         }
 
-        //metodo para insertar un administrador
         [WebMethod]
         public void WSinsertA(Modelo.Usuarios nuevo)
         {
-            //inserta un administrador
             Daos.UsuariosDao.insertA(nuevo);
         }
 
-        //método para buscar un usuario
         [WebMethod]
         public bool WSinsert(Modelo.Usuarios buscar)
         {
-            //busca un usuario
             return Daos.UsuariosDao.buscar(buscar);
         }
-        //método para buscar el tipo de usuario
+
         [WebMethod]
         public String WStipo(Modelo.Usuarios buscar)
         {
-            //busca el tipo de usuario
             return Daos.UsuariosDao.tipo(buscar);
         }
 
-        //método que busca el nombre del usuario
         [WebMethod]
         public String WSNombre(Modelo.Usuarios buscar)
         {
-            //busca el nombre del usuario
             return Daos.UsuariosDao.Nombre(buscar);
         }
 

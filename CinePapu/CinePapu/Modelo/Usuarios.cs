@@ -5,7 +5,6 @@ using System.Web;
 
 namespace CinePapu.Modelo
 {
-    //clase que nos servira para almacenar a los usuarios
     public class Usuarios
     {
         public String Nombre { get; set; }
