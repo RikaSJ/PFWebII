@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using Newtonsoft.Json;
+using CinePapu.Modelo;
+using CinePapu.Daos;
 
 namespace CinePapu.WSs
 {
@@ -64,6 +66,21 @@ namespace CinePapu.WSs
             strJSON = JsonConvert.SerializeObject(lista,
                           new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
             List<Modelo.Peliculas> d = JsonConvert.DeserializeObject<List<Modelo.Peliculas>>(strJSON);
+
+
+            return strJSON;
+
+        }
+
+        [WebMethod]
+        public string WSGetByID(String ID)
+        {
+
+            Peliculas Peli = Daos.PeliculaDao.getById(ID);
+            String strJSON;
+
+            strJSON = JsonConvert.SerializeObject(Peli,
+                          new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
 
 
             return strJSON;

@@ -75,7 +75,7 @@ namespace CinePapu.Daos
             
             Conexion con = new Conexion();
 
-            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Nombre = " + Id + "");
+            DataSet datos = con.LLenaComboGrid("SELECT * FROM peliculas WHERE Nombre = '" + Id + "'");
             DataTable dt = datos.Tables[0];
             Peliculas pelis=new Peliculas();
             foreach (DataRow r in dt.Rows)

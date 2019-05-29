@@ -12,12 +12,12 @@ namespace CinePapu.Daos
 {
     public class InteraccionDao
     {
-        public static List<Interaccion> getComentarios(String Email, String Nombre)
+        public static List<Interaccion> getComentarios( String Nombre)
         {
             List<Interaccion> lista = new List<Interaccion>();
             Conexion con = new Conexion();
 
-            DataSet datos = con.LLenaComboGrid("SELECT * FROM Interacciones where Email = '"+ Email +"' and Nombre = '"+ Nombre +"'");
+            DataSet datos = con.LLenaComboGrid("SELECT * FROM Interacciones where Nombre = '"+ Nombre +"'");
             DataTable dt = datos.Tables[0];
             Interaccion interaccion;
             foreach (DataRow r in dt.Rows)
@@ -37,6 +37,20 @@ namespace CinePapu.Daos
 
             return lista;
         }
+
+        public static void insertInteraccion(Interaccion comentario)
+        {
+            Conexion con = new Conexion();
+
+            String ss = "insert into interacciones (Email,Nombre,Comentario,Liked)" +
+                "values ('" + comentario.Email + "','" + comentario.NombrePeli + "','" + comentario.Comentario + "','" + (comentario.Liked ? "true" : "false")+"')";
+                
+            MySqlCommand sqlCom = new MySqlCommand();
+            sqlCom.CommandText = ss;
+            con.EjecutaSQLComando(sqlCom);
+        }
+
+       
 
 
     }

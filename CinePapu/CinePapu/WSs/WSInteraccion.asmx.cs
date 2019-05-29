@@ -22,10 +22,10 @@ namespace CinePapu.WSs
     {
 
         [WebMethod]
-        public string WSGetInteraccion()
+        public string WSGetInteraccion(String Nombre)
         {
 
-            List<Modelo.Interaccion> lista = InteraccionDao.getComentarios("Efrain_jared@hotmail.com", "Ready Player One");
+            List<Modelo.Interaccion> lista = InteraccionDao.getComentarios(Nombre);
             
             String strJSON;
 
@@ -36,6 +36,12 @@ namespace CinePapu.WSs
 
             return strJSON;
 
+        }
+
+        [WebMethod]
+        public void WSNuevaInteraccion(Interaccion nueva)
+        {
+            Daos.InteraccionDao.insertInteraccion(nueva);
         }
 
     }
