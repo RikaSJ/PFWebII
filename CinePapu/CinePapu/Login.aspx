@@ -31,7 +31,7 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
+	<!--Imagen que se muestra en el Login-->
 	<div class="limiter">
 		<div class="container-login100" style = " background-image: url('img/bg-01.jpg'); ">
 			<div class="wrap-login100">
@@ -39,21 +39,21 @@
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
-
+				<!--Solo es una etiqueta que dice iniciar sesion-->
 					<span class="login100-form-title p-b-34 p-t-27">
 						Iniciar sesion
 					</span>
-
+				<!--Un cuadro de texto para colocar el usuario -->
 					<div class="wrap-input100">
                         <asp:TextBox ID="txtusuario" runat="server" placeholder="Usuario"  class="input100" ></asp:TextBox>						
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
-
+				<!--Un cuadro de texto para colocar la contraseña -->
 					<div class="wrap-input100">
                         <asp:TextBox ID="txtcontrasenia" runat="server"  placeholder="Contraseñia"  class="input100" TextMode="Password" ></asp:TextBox>
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
-
+				<!-- Es un recordatorio para que lleve los datos-->
 					<!--<div class="contact100-form-checkbox">
                         <asp:CheckBox ID="recordarme" runat="server" />
 						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
@@ -61,9 +61,12 @@
 							Remember me
 						</label>
 					</div>-->
+					
+				<!--Esto aparece si el usuario no es correcto-->
                     <div id="alerta" runat="server">
                         <h5>!Usuario incorrecto</h5>
                     </div>
+					<!--Botones para el inicio de sesion o para registrarse -->
 					<div class="container-login100-form-btn">
                         <asp:Button ID="Iniciar" runat="server" Text="Iniciar Sesion"  class="login100-form-btn"  OnClick="Iniciar_Click" />
                         <asp:Button ID="Registrar" runat="server" Text="Registrarse"  class="login100-form-btn" OnClick="Registrar_Click"/>
