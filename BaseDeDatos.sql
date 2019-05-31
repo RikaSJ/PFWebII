@@ -22,6 +22,7 @@ UrlImagen varchar(300) not null,
 primary key(Nombre)
 );
 
+-- Creamos una tabla para las interacciones con varios atributos: El ID, Email, Nombre, Comentario, Liked, Index, etc
 CREATE TABLE Interacciones
 (	
 	idInteraccion int Not Null primary key auto_increment,
@@ -35,8 +36,10 @@ CREATE TABLE Interacciones
 );
 
 -- Insertamos 2 usuarios
+-- El primero es una administrador y el segundo un usuario
 insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rok','Rika_js@outlook.com','admin','Rok');
 insert into Usuarios (Nombre,Email,Tipo,Contrasena) values('Rika','icky_0307@hotmail.com','user','Rok');
+
 -- Insertamos 2 peliculas 
 INSERT INTO Peliculas(Nombre, Descripccion, Autor, Ano, Genero, UrlVideo, UrlImagen) 
 VALUES ('Ready Player One','Buena peli','Steven Spielberg','2018',5,'https://mega.nz/embed#!3d5nCA5R!osi7iZD2abALC7agwVRh0BgddpReMJkDl92rOq69KZM','ReadyPlayerOne.png');
