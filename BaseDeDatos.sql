@@ -1,4 +1,4 @@
-﻿-- Se crea la base de datos
+-- Se crea la base de datos
 create database cinepapu;
 -- Se utiliza la base de datos
 use cinepapu;
